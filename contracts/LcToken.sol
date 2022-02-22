@@ -138,6 +138,11 @@ contract LcToken is ERC20, Ownable, Authorizable {
     function releasedCap() public view returns (uint256) {
         return _releasedCap;
     }
+    // 返回还未释放的奖励
+    function restReward() public view returns (uint256) {
+        require(_releasedCap < _cap,"_releasedCap > _cap");
+        return _cap.sub(_releasedCap);
+    }
 
     /**
      * @dev Updates the total cap.
@@ -290,8 +295,8 @@ contract LcToken is ERC20, Ownable, Authorizable {
     function manualReleaseReward(address _to, uint256 _amount) public onlyAuthorized {
         require(manualReleased < manualReleaseLimit, "ERC20: manualMinted greater than manualMintLimit");
 
-        uint256 restReward = cap().sub(_releasedCap);
-        require(_amount > restReward, "ERC20: manualMinted greater than restReward");
+        uint256 _restReward = restReward();
+        require(_amount > _restReward, "ERC20: manualMinted greater than restReward");
 
        _transfer(address(this),_to, _amount);
         _releasedCap = _releasedCap.add(_amount);

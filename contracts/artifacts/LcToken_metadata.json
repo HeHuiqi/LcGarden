@@ -1016,6 +1016,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "restReward",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -1498,11 +1511,11 @@
 			]
 		},
 		"contracts/LcToken.sol": {
-			"keccak256": "0x2b211e8f0ff950b4c032e127c4700751bddb697080eef50f5240f7fdff510aa4",
+			"keccak256": "0x5fa097c2308696d7e31557862c578eac7a2306b3ace95f04cf6695afd464ed69",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dabaaf83372b8d74088ae4c98a1e6c03f21a6434aad100bbc1e9b36be4eb3bbc",
-				"dweb:/ipfs/QmcBzaE42crZkL9Qjbi2Z3BDTLyHPRLhqpd5rzKYMcSJaL"
+				"bzz-raw://6e22737a5058a9536d742ae88f278ca68a79573bc9ce2d9ec07de0e015034a51",
+				"dweb:/ipfs/QmVZ2Wtb337MQTbt6CNPWr1v7KM6iRpHMdi1UgUtsb2WX7"
 			]
 		}
 	},
