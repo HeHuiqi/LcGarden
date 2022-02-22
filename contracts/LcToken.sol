@@ -218,8 +218,12 @@ contract LcToken is ERC20, Ownable, Authorizable {
 
         if (from == address(0)) {
             // When minting tokens
+            // require(
+            //     totalSupply().add(amount) <= _cap,
+            //     "ERC20Capped: cap exceeded"
+            // );
             require(
-                totalSupply().add(amount) <= _cap,
+                amount<= totalSupply(),
                 "ERC20Capped: cap exceeded"
             );
         }

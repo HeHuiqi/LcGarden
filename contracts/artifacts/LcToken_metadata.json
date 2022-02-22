@@ -1498,11 +1498,11 @@
 			]
 		},
 		"contracts/LcToken.sol": {
-			"keccak256": "0x9e1d27f9a5e017b4241e901d402a2477bf81b1f3d12f8028af351ae33f075f7a",
+			"keccak256": "0xca1948b12978df4303dd6b4b61e0bd5f2b077a4b3ace3eff464800d0b8509d1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://de329dccfec6381b50dc73c542e835bb00f148baf122dd8db6fe4a3cf68ad306",
-				"dweb:/ipfs/QmabzYXEpcZDAwJCSUZk1aAnSdFfU8Tvxg2okNspAPY2fd"
+				"bzz-raw://95ff0daf3fbb5b1c5ee4eec8b61f39d623fac714183100c58f339125f0c88c98",
+				"dweb:/ipfs/QmbPMzQm4Pv2piMEVrSpgx8bAvgRMQxuk6mrYbUo6BHSkk"
 			]
 		}
 	},

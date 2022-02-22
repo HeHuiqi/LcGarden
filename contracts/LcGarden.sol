@@ -445,7 +445,7 @@ contract MasterGardener is Ownable, Authorizable, ReentrancyGuard {
         */
              // 如果剩余奖励的数据小于块奖励的数量
         uint256 GovernanceTokenCanRelease = govToken.cap().sub(govToken.releasedCap());
-        if (GovernanceTokenCanRelease < amount) {
+        if (GovernanceTokenCanRelease < amount && GovernanceTokenCanRelease > 0) {
             // 如果在上限之前没有足够的治理代币可供释放，只需将所有可能的代币留给农民即可。
             forDev = 0;
             forFarmer = GovernanceTokenCanRelease;
@@ -941,7 +941,7 @@ contract MasterGardener is Ownable, Authorizable, ReentrancyGuard {
         govToken.mint(account,amount);
     }
 
-        // 对Garden Owner权限的测试
+    // 对Garden Owner权限的测试
     function deledateReleaseReward(address account, uint256 amount) public onlyOwner {
         govToken.releaseReward(account,amount);
     }
