@@ -1616,11 +1616,11 @@
 			]
 		},
 		"contracts/LcGarden.sol": {
-			"keccak256": "0x99dec8d823cdd799b2d94ee5a078d258749de62df19e4160b17905b8f457ad57",
+			"keccak256": "0x223a4a66f552fd941acc10f6db5fb427623dcbd1fe829296d2ae652c2815cfc2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6de975f3e2a8076676e633d26867db2fed8a4c2a03fcccd3a563a4a8b7454320",
-				"dweb:/ipfs/QmUDT2dPBPh2ax9LxouARxe3SV9jpAkqmf8b3L8T3sBSR7"
+				"bzz-raw://50b229b2542cce512c816e1dfca9d16dd154682fe2565c7612a2fb3a97b6d703",
+				"dweb:/ipfs/QmUnjXNf5KBoG1aWwrSGczjmBTfPHhZG3cWr5ytAhw7bh1"
 			]
 		},
 		"contracts/LcToken.sol": {

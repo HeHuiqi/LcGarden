@@ -142,7 +142,7 @@ contract LcToken is ERC20, Ownable, Authorizable {
     /**
      * @dev Updates the total cap.
      */
-     // 更新总量上限
+     // 更新激励总量上限
     function capUpdate(uint256 _newCap) public onlyAuthorized {
         _cap = _newCap;
     }

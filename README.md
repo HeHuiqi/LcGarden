@@ -10,10 +10,12 @@ npm i
 ```
 
 # 部署LcToken合约和LcGarden合约步骤
-1. 部署LcToken合约
-2. 根据部署完的LcToken合约地址来部署LcGarden合约
-3. 调用LcToken合约的transferOwnership(garden_address)将owner转移给garden，这样garden才可以mint()新币来分发奖励
-4. 当奖励分发完成再调用Garden的reclaimTokenOwnership(original_token_owner_address)返还权限
+* 部署LcToken合约
+* 根据部署完的LcToken合约地址来部署LcGarden合约
+* 调用LcToken合约的addAuthorized()为LcToken添加一个管理员
+* 将所有激励转移到LcToken合约上
+* 调用LcToken合约的transferOwnership(garden_address)将owner转移给garden，这样garden才可以调用releaseReward()来分发奖励
+* 当奖励分发完成再调用Garden的reclaimTokenOwnership(original_token_owner_address)返还权限
 
 
 

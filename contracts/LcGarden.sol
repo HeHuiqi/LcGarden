@@ -176,7 +176,7 @@ contract MasterGardener is Ownable, Authorizable, ReentrancyGuard {
         uint256[8] memory _userFeeStage = [uint256(75),92,96,98,99,995,9975,9999];
         userFeeStage = _userFeeStage;
 
-        uint256[8] memory _devFeeStage = [uint256(75),92,96,98,99,995,9975,9999];
+        uint256[8] memory _devFeeStage = [uint256(25),8,4,2,1,5,25,1];
         devFeeStage = _devFeeStage;
 
         // 302400*1+startblcok+1
