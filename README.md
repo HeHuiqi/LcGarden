@@ -9,10 +9,10 @@ npm i
 
 ```
 
-# 部署JewelToken合约和MasterGarden合约步骤
-1. 部署JewelToken合约
-2. 根据部署完的JewelToken合约地址来部署MasterGarden合约
-3. 调用JewelToken合约的transferOwnership(garden_address)将owner转移给garden，这样garden才可以mint()新币来分发奖励
+# 部署LcToken合约和LcGarden合约步骤
+1. 部署LcToken合约
+2. 根据部署完的LcToken合约地址来部署LcGarden合约
+3. 调用LcToken合约的transferOwnership(garden_address)将owner转移给garden，这样garden才可以mint()新币来分发奖励
 4. 当奖励分发完成再调用Garden的reclaimTokenOwnership(original_token_owner_address)返还权限
 
 
@@ -26,7 +26,7 @@ one1jq2tjdcxnyvt6vvlsr5t8w629nm04f0hfepala
 UniswapV2Router02 - 0x24ad62502d1C652Cc7684081169D04896aC20f30
 one1yjkky5pdr3jje3mggzq3d8gy394vyresl69pgt
 
-JewelToken 0x72Cb10C6bfA5624dD07Ef608027E366bd690048F
+LcToken 0x72Cb10C6bfA5624dD07Ef608027E366bd690048F
 one1wt93p34l543ym5r77cyqyl3kd0tfqpy0eyd6n0
 
 Bank - 0xA9cE83507D872C5e1273E745aBcfDa849DAA654F
@@ -35,7 +35,7 @@ one1488gx5rasuk9uynnuaz6hn76sjw65e206pmljg
 Banker - 0x3685Ec75Ea531424Bbe67dB11e07013ABeB95f1e
 one1x6z7ca022v2zfwlx0kc3upcp82ltjhc7ucgz82
 
-MasterGardener - 0xDB30643c71aC9e2122cA0341ED77d09D5f99F924
+LcGardener - 0xDB30643c71aC9e2122cA0341ED77d09D5f99F924
 one1mvcxg0r34j0zzgk2qdq76a7sn40en7fy7lytq4
 
 Airdrop - 0xa678d193fEcC677e137a00FEFb43a9ccffA53210
